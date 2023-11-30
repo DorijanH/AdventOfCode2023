@@ -25,7 +25,7 @@ public class Day01Tests : TestBase
     }
 
     /// <summary>
-    /// Tests that the result of the second part of the puzzle is the same as the provided result.
+    /// Tests that the result of the second part of the puzzle is the same as the provided example result.
     /// </summary>
     [Fact]
     protected override void SecondPart()
