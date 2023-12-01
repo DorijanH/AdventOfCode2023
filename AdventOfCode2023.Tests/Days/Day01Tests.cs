@@ -21,7 +21,7 @@ public class Day01Tests : TestBase
     [Fact]
     protected override void FirstPart()
     {
-        Assert.Equal("Expected value", this.AdventDay.SolveFirstPart());
+        Assert.Equal("142", this.AdventDay.SolveFirstPart());
     }
 
     /// <summary>
@@ -30,6 +30,6 @@ public class Day01Tests : TestBase
     [Fact]
     protected override void SecondPart()
     {
-        Assert.Equal("Expected value", this.AdventDay.SolveSecondPart());
+        Assert.Equal("281", this.AdventDay.SolveSecondPart());
     }
 }
