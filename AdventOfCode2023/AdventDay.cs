@@ -1,4 +1,6 @@
-﻿namespace AdventOfCode2023;
+﻿using System.Diagnostics;
+
+namespace AdventOfCode2023;
 
 /// <summary>
 /// An abstract class representing an advent day.
@@ -37,13 +39,24 @@ public abstract class AdventDay
     /// </summary>
     public void Solve()
     {
-        Console.WriteLine("FIRST PART:");
-        Console.WriteLine(this.SolveFirstPart());
+        var stopwatch = new Stopwatch();
+
+        stopwatch.Start();
+        var firstPart = this.SolveFirstPart();
+        stopwatch.Stop();
+
+        Console.WriteLine($"FIRST PART: (took {stopwatch.Elapsed:m\\:ss\\.fff})");
+        Console.WriteLine(firstPart);
 
         Console.WriteLine();
+        stopwatch.Reset();
+        
+        stopwatch.Start();
+        var secondPart = this.SolveSecondPart();
+        stopwatch.Stop();
 
-        Console.WriteLine("SECOND PART:");
-        Console.WriteLine(this.SolveSecondPart());
+        Console.WriteLine($"SECOND PART: (took {stopwatch.Elapsed:m\\:ss\\.fff})");
+        Console.WriteLine(secondPart);
     }
 
     /// <summary>
