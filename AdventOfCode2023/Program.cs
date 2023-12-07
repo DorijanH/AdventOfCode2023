@@ -1,5 +1,5 @@
 ﻿using AdventOfCode2023;
-using AdventOfCode2023.Days;
+using AdventOfCode2023.Days.Day07;
 
-AdventDay day = new Day06();
+AdventDay day = new Day07();
 day.Solve();
